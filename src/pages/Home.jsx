@@ -150,7 +150,7 @@ export default function DigitalCard() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-12 w-12 rounded-full flex items-center justify-center transition-all duration-300 bg-white/10 border border-white/10 hover:bg-[#0045EF] hover:border-[#0045EF] hover:-translate-y-1"
+                  className="h-12 w-12 rounded-full flex items-center justify-center transition-all duration-300 bg-white/10 border border-white/10 hover:bg-white/30 hover:-translate-y-1"
                 >
                   <IconComponent className="w-5 h-5" />
                 </a>
@@ -165,7 +165,7 @@ export default function DigitalCard() {
               className="w-full h-16 flex items-center justify-center gap-3 rounded-2xl font-bold bg-[#787a7e] hover:bg-[#a7a8aa] transition-all active:scale-95"
             >
               <Download className="w-6 h-6" />
-              Save Contact to Phone
+              Save Contact
             </button>
           </section>
 
