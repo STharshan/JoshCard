@@ -53,7 +53,7 @@ export default function DigitalCard() {
         {/* Header: Circle Image + Logo */}
         <header className="w-full max-w-md px-6 pt-16 pb-6 flex items-center justify-center gap-5 md:gap-8">
           <div className="relative shrink-0">
-            <div className="absolute inset-0 bg-[#0045EF]/30 blur-2xl rounded-full scale-110" />
+            <div className="absolute inset-0  blur-2xl rounded-full scale-110" />
             <img
               src="/josh-image.jpeg"
               alt={founder.name}
@@ -83,7 +83,7 @@ export default function DigitalCard() {
           {/* Founder Details */}
           <section className="text-center mb-10">
             <h2 className="text-2xl font-bold tracking-wide">{founder.name}</h2>
-            <p className="text-[#3399FF] font-medium mt-1 uppercase text-xs tracking-[0.2em]">
+            <p className="text-gray-200 font-medium mt-1 uppercase text-xs tracking-[0.2em]">
               {founder.title}
             </p>
           </section>
@@ -120,7 +120,7 @@ export default function DigitalCard() {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service} className="flex text-center justify-center items-center gap-3">
-                  <span className="h-2 w-2 rounded-full bg-[#0045EF]" />
+                  <span className="h-2 w-2 rounded-full bg-[#787a7e]" />
                   <span className="text-white">{service}</span>
                 </li>
               ))}
@@ -162,7 +162,7 @@ export default function DigitalCard() {
           <section className="mb-12">
             <button
               onClick={downloadVCF}
-              className="w-full h-16 flex items-center justify-center gap-3 rounded-2xl font-bold bg-[#0045EF] hover:bg-[#0037c1] transition-all shadow-[0_10px_20px_rgba(0,69,239,0.3)] active:scale-95"
+              className="w-full h-16 flex items-center justify-center gap-3 rounded-2xl font-bold bg-[#787a7e] hover:bg-[#a7a8aa] transition-all active:scale-95"
             >
               <Download className="w-6 h-6" />
               Save Contact to Phone
