@@ -35,11 +35,11 @@ export default function DigitalCard() {
 
   return (
     <main className="relative min-h-screen text-white flex justify-center bg-[#05080B] overflow-x-hidden">
-      
+
       {/* 1. Background Image Layer */}
-      <div 
+      <div
         className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
+        style={{
           backgroundImage: "url('/background.jpeg')", // Replace with your image path
         }}
       >
@@ -116,14 +116,12 @@ export default function DigitalCard() {
 
           {/* Services */}
           <section className="mb-10">
-            <h3 className="text-sm font-bold uppercase tracking-widest mb-6 text-center text-[#3399FF]">
-              Key Services
-            </h3>
-            <ul className="grid grid-cols-1 gap-3">
+            <h3 className="text-lg font-semibold mb-4 text-center">Key Services</h3>
+            <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service} className="flex items-center gap-3 bg-white/10 border border-white/5 p-4 rounded-xl backdrop-blur-md">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#0045EF] shadow-[0_0_10px_#0045EF]" />
-                  <span className="text-sm font-medium text-gray-100">{service}</span>
+                <li key={service} className="flex text-center justify-center items-center gap-3">
+                  <span className="h-2 w-2 rounded-full bg-[#0045EF]" />
+                  <span className="text-white">{service}</span>
                 </li>
               ))}
             </ul>
